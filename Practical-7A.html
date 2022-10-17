@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>REVERSE OF A NUMBER</title>
+
+  <style>
+    body {
+      background: rgb(255, 255, 255);
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.9391106784510679) 53%, rgba(195, 195, 195, 0.6561975131849616) 100%);
+    }
+
+  </style>
+
+</head>
+
+<script type="text/javascript">
+  function reverse_num() {
+
+    var num = parseInt(prompt("Enter the number to be reveresed :"));
+    var n = num;
+    var rev = 0, rem;
+
+    while (n > 0) {
+
+      rem = n % 10;
+      rev = rev * 10 + rem;
+      n = Math.floor(n / 10);
+    }
+
+    document.write(" ORIGINAL NUMBER : " + num + " <br><br>REVERSED NUMBER : " + rev + "\n");
+  }
+</script>
+
+<body>
+  <CENTER>
+    <h1>REVERSING THE NUMBER</h1><br>
+
+    <h2>
+      <br><br>
+      <script>
+        reverse_num()
+      </script>
+    </h2>
+  </CENTER>
+
+</body>
+
+</html>
